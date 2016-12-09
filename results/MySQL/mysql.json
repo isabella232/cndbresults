@@ -1,0 +1,265 @@
+{
+	"close_connexion_time": 0.0034379959106445312,
+	"create_connexion_time": 0.018466949462890625,
+	"inserts_time_one": {
+		"DatabaseInfo": {
+			"count": 2,
+			"time": 0.00919795036315918
+		},
+		"WordList": {
+			"count": 100,
+			"time": 0.466904878616333
+		},
+		"BlobStore": {
+			"count": 100,
+			"time": 0.5199198722839355
+		},
+		"NodeInfo": {
+			"count": 28,
+			"time": 0.011137008666992188
+		},
+		"IDXProperty23": {
+			"count": 100,
+			"time": 0.028799057006835938
+		},
+		"IDXProperty62": {
+			"count": 100,
+			"time": 0.04022622108459473
+		},
+		"IDXProperty24": {
+			"count": 100,
+			"time": 0.03916215896606445
+		},
+		"IDXProperty43": {
+			"count": 100,
+			"time": 0.032199859619140625
+		},
+		"IDXProperty42": {
+			"count": 100,
+			"time": 0.046881914138793945
+		},
+		"UniqueKey": {
+			"count": 1,
+			"time": 0.004389047622680664
+		},
+		"IDXProperty60": {
+			"count": 100,
+			"time": 0.03261113166809082
+		},
+		"IDXProperty44": {
+			"count": 100,
+			"time": 0.04055500030517578
+		},
+		"IDXProperty58": {
+			"count": 100,
+			"time": 0.05003786087036133
+		},
+		"IDXProperty48": {
+			"count": 100,
+			"time": 0.0323488712310791
+		},
+		"IDXProperty69": {
+			"count": 2,
+			"time": 0.0038979053497314453
+		},
+		"ProtectionDomains": {
+			"count": 3,
+			"time": 0.004414081573486328
+		},
+		"IDXProperty81": {
+			"count": 100,
+			"time": 0.029819965362548828
+		},
+		"IDXProperty80": {
+			"count": 100,
+			"time": 0.03142285346984863
+		},
+		"total": 1.0272650718688965,
+		"IDXProperty32": {
+			"count": 100,
+			"time": 0.03375077247619629
+		},
+		"IDXPropertyUndefined": {
+			"count": 100,
+			"time": 0.030303001403808594
+		},
+		"IDXProperty2": {
+			"count": 1,
+			"time": 0.00273895263671875
+		},
+		"IDXProperty3": {
+			"count": 100,
+			"time": 0.03300786018371582
+		},
+		"IDXProperty1": {
+			"count": 100,
+			"time": 0.036238908767700195
+		},
+		"IDXProperty6": {
+			"count": 1,
+			"time": 0.003216981887817383
+		},
+		"IDXProperty7": {
+			"count": 1,
+			"time": 0.0060651302337646484
+		},
+		"IDXProperty4": {
+			"count": 100,
+			"time": 0.0368499755859375
+		},
+		"IDXProperty5": {
+			"count": 100,
+			"time": 0.03587603569030762
+		},
+		"IDXProperty8": {
+			"count": 1,
+			"time": 0.0021910667419433594
+		},
+		"IDXProperty9": {
+			"count": 1,
+			"time": 0.003233194351196289
+		},
+		"IDXProperty10": {
+			"count": 1,
+			"time": 0.003117084503173828
+		},
+		"IDXProperty11": {
+			"count": 1,
+			"time": 0.0018219947814941406
+		},
+		"IDXProperty12": {
+			"count": 1,
+			"time": 0.0016009807586669922
+		},
+		"IDXProperty13": {
+			"count": 1,
+			"time": 0.0025191307067871094
+		},
+		"IDXProperty14": {
+			"count": 1,
+			"time": 0.0016720294952392578
+		},
+		"IDXProperty15": {
+			"count": 1,
+			"time": 0.0019061565399169922
+		},
+		"IDXProperty18": {
+			"count": 100,
+			"time": 0.03381800651550293
+		},
+		"IDXProperty31": {
+			"count": 100,
+			"time": 0.029864072799682617
+		},
+		"IDXProperty36": {
+			"count": 100,
+			"time": 0.03203892707824707
+		},
+		"NodeId": {
+			"count": 14,
+			"time": 0.00563812255859375
+		},
+		"PropertyTypes": {
+			"count": 81,
+			"time": 0.04272890090942383
+		},
+		"IDXProperty76": {
+			"count": 100,
+			"time": 0.032089948654174805
+		},
+		"IDXProperty77": {
+			"count": 100,
+			"time": 0.03081798553466797
+		},
+		"IDXProperty74": {
+			"count": 1,
+			"time": 0.0017349720001220703
+		},
+		"IDXProperty75": {
+			"count": 100,
+			"time": 0.0339510440826416
+		},
+		"IDXProperty72": {
+			"count": 3,
+			"time": 0.004575967788696289
+		},
+		"IDXProperty73": {
+			"count": 1,
+			"time": 0.0021059513092041016
+		},
+		"IDXProperty70": {
+			"count": 100,
+			"time": 0.03238487243652344
+		},
+		"IDXProperty71": {
+			"count": 2,
+			"time": 0.004067182540893555
+		},
+		"IDXProperty78": {
+			"count": 100,
+			"time": 0.029191970825195312
+		},
+		"IDXProperty79": {
+			"count": 100,
+			"time": 0.0390470027923584
+		}
+	},
+	"create_database_time": 2.1457672119140625e-06,
+	"delete_table_time": 0.4113960266113281,
+	"total_time": 810.7755591869354,
+	"inserts_time_all": {
+		"DatabaseInfo": 0.00978708267211914,
+		"WordList": 31.524091005325317,
+		"BlobStore": 118.78028512001038,
+		"NodeInfo": 0.004626035690307617,
+		"IDXProperty23": 14.63817286491394,
+		"IDXProperty62": 14.237185955047607,
+		"IDXProperty24": 13.096163988113403,
+		"IDXProperty43": 16.61436414718628,
+		"IDXProperty42": 19.64734387397766,
+		"UniqueKey": 0.003724813461303711,
+		"IDXProperty60": 36.989933013916016,
+		"IDXProperty44": 13.26991581916809,
+		"IDXProperty58": 13.208973169326782,
+		"IDXProperty48": 13.009452819824219,
+		"IDXProperty69": 0.03690505027770996,
+		"ProtectionDomains": 0.004178047180175781,
+		"IDXProperty81": 12.552692174911499,
+		"IDXProperty80": 12.041271924972534,
+		"total": 707.3415999412537,
+		"IDXProperty32": 15.103593111038208,
+		"IDXPropertyUndefined": 9.823737144470215,
+		"IDXProperty2": 0.03500509262084961,
+		"IDXProperty3": 29.883224964141846,
+		"IDXProperty1": 15.72994589805603,
+		"IDXProperty6": 0.05258512496948242,
+		"IDXProperty7": 0.012546062469482422,
+		"IDXProperty4": 83.88950300216675,
+		"IDXProperty5": 94.10741901397705,
+		"IDXProperty8": 0.01126408576965332,
+		"IDXProperty9": 0.013170003890991211,
+		"IDXProperty10": 0.026401996612548828,
+		"IDXProperty11": 0.010248184204101562,
+		"IDXProperty12": 0.009317159652709961,
+		"IDXProperty13": 0.009764909744262695,
+		"IDXProperty14": 0.010137081146240234,
+		"IDXProperty15": 0.008749008178710938,
+		"IDXProperty18": 14.731207132339478,
+		"IDXProperty31": 19.979717016220093,
+		"IDXProperty36": 12.191710948944092,
+		"NodeId": 0.0038788318634033203,
+		"PropertyTypes": 0.0048520565032958984,
+		"IDXProperty76": 11.835983037948608,
+		"IDXProperty77": 13.434277057647705,
+		"IDXProperty74": 0.008828878402709961,
+		"IDXProperty75": 15.140645027160645,
+		"IDXProperty72": 0.009618997573852539,
+		"IDXProperty73": 0.014855146408081055,
+		"IDXProperty70": 15.709044933319092,
+		"IDXProperty71": 0.012690067291259766,
+		"IDXProperty78": 13.390875101089478,
+		"IDXProperty79": 12.467736959457397
+	},
+	"create_table_time": 0.9492888450622559,
+	"size": 0
+}
