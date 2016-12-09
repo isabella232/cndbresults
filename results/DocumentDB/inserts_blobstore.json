@@ -1,0 +1,12 @@
+{"inserts_time_one":
+{"total": 49.74807333946228,
+  "BlobStore": {"count": 100, "time": 49.74807333946228}},
+  "inserts_time_all": {"total": 6116.266303062439,
+    "BlobStore": 6116.266303062439},
+  "stats": 0, "total_time": 6178.881865501404,
+  "delete_table_time": 0.32410240173339844,
+  "size": 0,
+  "create_database_time": 7.343292236328125e-05,
+  "create_table_time": 4.0531158447265625e-06,
+  "create_connexion_time": 3.0994415283203125e-06,
+  "close_connexion_time": 0.009854555130004883}

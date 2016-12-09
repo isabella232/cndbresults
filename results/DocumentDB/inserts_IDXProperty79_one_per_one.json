@@ -1,0 +1,15 @@
+{"create_connexion_time": 4.76837158203125e-07,
+  "delete_table_time": 2.259793758392334,
+  "create_table_time": 9.5367431640625e-07,
+  "close_connexion_time": 0.0010268688201904297,
+  "create_database_time": 4.172325134277344e-05,
+  "inserts_time_all": {}, "total_time": 5376.477630138397,
+  "stats": 0,
+  "inserts_time_one":
+  {"IDXProperty79": {"count": 100, "time": 27.05388641357422},
+    "total": 162.70815539360046,
+    "IDXProperty76": {"count": 100, "time": 37.937843322753906},
+    "IDXProperty78": {"count": 100, "time": 26.985093116760254},
+    "BlobStore": {"count": 100, "time": 48.98917078971863},
+    "PropertyTypes": {"count": 81, "time": 21.742161750793457}},
+  "size": 0}

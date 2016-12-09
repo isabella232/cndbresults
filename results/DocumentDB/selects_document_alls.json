@@ -1,0 +1,28 @@
+[{"time_total": 3834.869791984558,
+  "time_many_files": 214.8342444896698,
+  "time_contains": 1391.5080347061157,
+  "time_order_number_neq": 2225.2306668758392,
+  "time_order_number_eq": 3.2968180179595947},
+{"time_many_files": 214.9421546459198,
+  "time_total": 3836.0435009002686,
+  "time_order_number_neq": 2225.9325456619263,
+  "time_contains": 1391.8115601539612,
+  "time_order_number_eq": 3.3572120666503906},
+{
+  "time_many_files": 215.12164974212646,
+  "time_contains": 1252.2307393550873,
+  "time_total": 2581.033118247986,
+  "time_order_number_neq": 1113.6155381202698,
+  "time_order_number_eq": 0.06515693664550781},
+{
+  "time_many_files": 215.1379828453064,
+  "time_contains": 1252.5081250667572,
+  "time_total": 2582.5140166282654,
+  "time_order_number_neq": 1114.4885144233704,
+  "time_order_number_eq": 0.37936902046203613},
+{"time_total": 2583.9782338142395,
+  "time_many_files": 215.14233541488647,
+  "time_order_number_eq": 0.43970775604248047,
+  "time_contains": 1252.4832446575165,
+  "time_order_number_neq": 1115.91268491745}
+]
