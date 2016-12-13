@@ -1,0 +1,23 @@
+documentdbtest | Traceback (most recent call last):
+documentdbtest |   File "/usr/src/app/Test.py", line 39, in <module>
+documentdbtest |     s_documentdb()
+documentdbtest |   File "/usr/src/app/Test.py", line 31, in s_documentdb
+documentdbtest |     s.selects_mongo(None, None, client, "selects_documentdb", 10)
+documentdbtest |   File "/usr/src/app/SelectTest.py", line 92, in selects_mongo
+documentdbtest |     t = self.aux_selects_mongo(db)
+documentdbtest |   File "/usr/src/app/SelectTest.py", line 40, in aux_selects_mongo
+documentdbtest |     print(r.count())
+documentdbtest |   File "/usr/local/lib/python3.5/site-packages/pymongo/cursor.py", line 711, in count
+documentdbtest |     return self.__collection._count(cmd, self.__collation)
+documentdbtest |   File "/usr/local/lib/python3.5/site-packages/pymongo/collection.py", line 1310, in _count
+documentdbtest |     collation=collation)
+documentdbtest |   File "/usr/local/lib/python3.5/site-packages/pymongo/collection.py", line 232, in _command
+documentdbtest |     collation=collation)
+documentdbtest |   File "/usr/local/lib/python3.5/site-packages/pymongo/pool.py", line 419, in command
+documentdbtest |     collation=collation)
+documentdbtest |   File "/usr/local/lib/python3.5/site-packages/pymongo/network.py", line 116, in command
+documentdbtest |     parse_write_concern_error=parse_write_concern_error)
+documentdbtest |   File "/usr/local/lib/python3.5/site-packages/pymongo/helpers.py", line 210, in _check_command_response
+documentdbtest |     raise OperationFailure(msg % errmsg, code, response)
+documentdbtest | pymongo.errors.OperationFailure: Message: {"Errors":["Request rate is large"]}
+documentdbtest | ActivityId: ee3f846a-0000-0000-0000-000000000000, Request URI: rntbd://100.119.124.154:16700/apps/36834417-c2b8-4524-871e-e3247817af32/services/4530c742-7c36-4504-97c1-1712a6aee255/partitions/59d37771-b8cc-411c-a090-c3bcd3cafffb/replicas/131260263090130602p
