@@ -11,6 +11,7 @@ Description:
 Previous steps:
 Instructions:
 Result:
+Conclusions:
 State: 
 
 ----------------------------------------
@@ -19,8 +20,8 @@ Title:
     Selects test documentdb with a local benchmark. 
 Date: 
     13/12/2016
-Time_start:
-Time_end:
+Time_start: 10:05
+Time_end: 10:05
 Description: 
     Selects test running the benchmark in the machine A and the database is a
     instance of Documentdb in Microsoft Azure. The zone is: West Europe.
@@ -32,7 +33,14 @@ Instructions:
     2. cd databaseComparison/Benchmark/documentdb
     3. docker build -t documentdbtest ./benchmark
     4. docker-compose up
-Result:
-State: 
+Results:
+    arkis/experiments/results/13-12-2016/documentdbtest/selectdocumentdb.txt
+Conclusions: 
+    Exception with error: request rate is large.
+    https://blogs.msdn.microsoft.com/bigdatasupport/2015/09/02/dealing-with-requestratetoolarge-errors-in-azure-documentdb-and-testing-performance/
+    It is a error by design. Sending requests at a rate more than
+    our number of request units/sec.
+State:
+    Failure
 
 ----------------------------------------
