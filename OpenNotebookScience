@@ -3,6 +3,7 @@ Machine A: Apple MacBook Pro 12 with Intel Core i5 processor clocked at 2.7GHz
 and 16 GB RAM. Running Mac OS X El Capitan 10.11.5.
 ----------------------------------------
 
+Id:
 Title:
 Date:
 Time_start:
@@ -16,6 +17,8 @@ State:
 
 ----------------------------------------
 
+Id:
+    1
 Title: 
     Selects test documentdb with a local benchmark. 
 Date: 
@@ -42,5 +45,35 @@ Conclusions:
     our number of request units/sec.
 State:
     Failure
+
+----------------------------------------
+
+Id:
+    2
+Title:
+    Select crate benchmark and database in local
+Date: 
+    12/13/2016
+Time_start:
+    ~15:30
+Time_end:
+    ~16:00
+Description:
+    Selects test using docker compose. The benchmark and the database are
+    in the machine A. 
+Previous steps:
+    Insert in the database crate the collections PropertyTypes,
+    IDXProperty76, IDXProperty78, IDXProperty79, BlobStore.
+Instructions:
+    1. Clone the repository arkis/databaseComparison
+    2. cd databaseComparison/Benchmark/
+    3. docker build -t benchmark . (using the method s_crate())
+    4. docker-compose up (Using the docker-compose-crate.yml)
+Result:
+    arkis/experiments/results/13-12-2016/cratetest/selects_crate_no_limits.json
+Conclusions:
+    Correct times without the usual limit with crate.
+State: 
+    Success
 
 ----------------------------------------
