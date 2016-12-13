@@ -1,1 +1,38 @@
-START
+----------------------------------------
+Machine A: Apple MacBook Pro 12 with Intel Core i5 processor clocked at 2.7GHz
+and 16 GB RAM. Running Mac OS X El Capitan 10.11.5.
+----------------------------------------
+
+Title:
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+State: 
+
+----------------------------------------
+
+Title: 
+    Selects test documentdb with a local benchmark. 
+Date: 
+    13/12/2016
+Time_start:
+Time_end:
+Description: 
+    Selects test running the benchmark in the machine A and the database is a
+    instance of Documentdb in Microsoft Azure. The zone is: West Europe.
+Previous steps: 
+    Insert in the database documentdb the collections PropertyTypes,
+    IDXProperty76, IDXProperty78, IDXProperty79, BlobStore.
+Instructions:
+    1. Clone the repository arkis/databaseComparison
+    2. cd databaseComparison/Benchmark/documentdb
+    3. docker build -t documentdbtest ./benchmark
+    4. docker-compose up
+Result:
+State: 
+
+----------------------------------------
