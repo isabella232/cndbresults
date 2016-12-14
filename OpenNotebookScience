@@ -76,4 +76,44 @@ Conclusions:
 State: 
     Success
 
+----------------------------------------  
+
+Id:
+    3
+Title:
+    MultiTenant test for option B.
+Date:
+    14/12/2016
+Time_start:
+    9:28
+Time_end:
+    9:37
+Description:
+    Selects test with multitenant for the option B implemented in google cloud.
+    The database that we use is Mongodb.
+    The test is running in two ways: with 10 threads (one per tenant) and in 
+    only one thread.
+Previous steps:
+    A.Install the option B for mongodb in kubernetes:
+        1. Clone the git repository clone/containers
+        2. cd containers/KubernetesBlueprints/kubernetes1.4/simple/MultiTenant/persistent/googlepersistence/OPTIONB
+        3. kubectl create -f .
+    B. Run the insert method for the option B for inserts the collections
+    PropertyTypes, IDXProperty76, IDXProperty78, IDXProperty79, BlobStore, with
+    10 tenants. 
+Instructions: 
+    1. git clone arkis/databaseComparison
+    2. Run the method multitenant_selects for option B with True for 
+    the option thread.
+    3. Run the method multitenant_selects for option B with False for 
+    the option thread.
+Result:
+    - arkis/experiments/results/14-12-2016/bnot.json
+    - arkis/experiments/results/14-12-2016/bwt.json
+Conclusions:
+State: 
+    Success
+
+----------------------------------------
+
 ----------------------------------------
