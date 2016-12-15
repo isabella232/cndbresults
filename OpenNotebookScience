@@ -28,6 +28,7 @@ Time_end: 10:05
 Description: 
     Selects test running the benchmark in the machine A and the database is a
     instance of Documentdb in Microsoft Azure. The zone is: West Europe.
+    (S2/1000 requests/s limit)
 Previous steps: 
     Insert in the database documentdb the collections PropertyTypes,
     IDXProperty76, IDXProperty78, IDXProperty79, BlobStore.
