@@ -38,7 +38,7 @@ Instructions:
     3. docker build -t documentdbtest ./benchmark
     4. docker-compose up
 Results:
-    arkis/experiments/results/13-12-2016/documentdbtest/selectdocumentdb.txt
+    results/13-12-2016/documentdbtest/selectdocumentdb.txt
 Conclusions: 
     Exception with error: request rate is large.
     https://blogs.msdn.microsoft.com/bigdatasupport/2015/09/02/dealing-with-requestratetoolarge-errors-in-azure-documentdb-and-testing-performance/
@@ -71,7 +71,7 @@ Instructions:
     3. docker build -t benchmark . (using the method s_crate())
     4. docker-compose up (Using the docker-compose-crate.yml)
 Result:
-    arkis/experiments/results/13-12-2016/cratetest/selects_crate_no_limits.json
+    results/13-12-2016/cratetest/selects_crate_no_limits.json
 Conclusions:
     Correct times without the usual limit with crate.
 State: 
@@ -109,8 +109,8 @@ Instructions:
     3. Run the method multitenant_selects for option B with False for 
     the option thread.
 Result:
-    - arkis/experiments/results/14-12-2016/bnot.json
-    - arkis/experiments/results/14-12-2016/bwt.json
+    - results/14-12-2016/bnot.json
+    - results/14-12-2016/bwt.json
 Conclusions:
 State: 
     Success
