@@ -117,4 +117,79 @@ State:
 
 ----------------------------------------
 
+Id:
+    4
+Title:
+    MultiTenant test for option B.
+Date:
+    14/12/2016
+Time_start:
+    ~10:00
+Time_end:
+    ~10:00
+Description:
+    Selects test with multitenant for the option A implemented in google cloud.
+    The database that we use is Mongodb.
+    The test is running in two ways: with 10 threads (one per tenant) and in 
+    only one thread.
+Previous steps:
+    A.Install the option A for mongodb in kubernetes:
+        1. Clone the git repository clone/containers
+        2. cd containers/KubernetesBlueprints/kubernetes1.4/simple/MultiTenant/persistent/googlepersistence/OPTIONA
+        3. kubectl create -f .
+    B. Run the insert method for the option A for inserts the collections
+    PropertyTypes, IDXProperty76, IDXProperty78, IDXProperty79, BlobStore, with
+    10 tenants. 
+Instructions: 
+    1. git clone arkis/databaseComparison
+    2. Run the method multitenant_selects for option A with True for 
+    the option thread.
+    3. Run the method multitenant_selects for option A with False for 
+    the option thread.
+Result:
+    - results/14-12-2016/anot.json
+    - results/14-12-2016/awt.json
+Conclusions:
+State: 
+    Success
+
+----------------------------------------
+
+Id:
+    4
+Title:
+    MultiTenant test for option C.
+Date:
+    14/12/2016
+Time_start:
+    ~10:30
+Time_end:
+    ~10:30
+Description:
+    Selects test with multitenant for the option C implemented in google cloud.
+    The database that we use is Mongodb.
+    The test is running in two ways: with 10 threads (one per tenant) and in 
+    only one thread.
+Previous steps:
+    A.Install the option C for mongodb in kubernetes:
+        1. Clone the git repository clone/containers
+        2. cd containers/KubernetesBlueprints/kubernetes1.4/simple/MultiTenant/persistent/googlepersistence/OPTIONC
+        3. kubectl create -f .
+    B. Run the insert method for the option C for inserts the collections
+    PropertyTypes, IDXProperty76, IDXProperty78, IDXProperty79, BlobStore, with
+    10 tenants. 
+Instructions: 
+    1. git clone arkis/databaseComparison
+    2. Run the method multitenant_selects for option C with True for 
+    the option thread.
+    3. Run the method multitenant_selects for option C with False for 
+    the option thread.
+Result:
+    - results/14-12-2016/bnot.json
+    - results/14-12-2016/bwt.json
+Conclusions:
+State: 
+    Success
+
+----------------------------------------
 ----------------------------------------
