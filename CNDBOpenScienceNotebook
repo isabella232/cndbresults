@@ -1,7 +1,23 @@
+CNDB benchmark results - open science notebook
+
+The experiments described herein were conducted as part of the Cloud-Native
+Applications research initiative at the Service Prototyping Lab at Zurich
+University of Applied Sciences. The results were partially evaluated
+and examined in the paper: «Cloud-Native Databases: An Application Perspective.»
+
+Some further results are summarised in the PDF file in this repository.
+
+The ids 1-4 refer to a private dataset. All other ids refer to the public
+dataset corresponding to https://github.com/serviceprototypinglab/cndbbench
+in the versions starting from February 2017.
+
 ----------------------------------------
 Machine A: Apple MacBook Pro 12 with Intel Core i5 processor clocked at 2.7GHz
 and 16 GB RAM. Running Mac OS X El Capitan 10.11.5.
 ----------------------------------------
+
+The experiments are described uniformly with the following metadata for easier
+reproducibility:
 
 Id:
 Title:
