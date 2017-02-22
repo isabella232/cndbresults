@@ -7,7 +7,7 @@ and examined in the paper: «Cloud-Native Databases: An Application Perspective.
 
 Some further results are summarised in the PDF file in this repository.
 
-The ids 1-4 refer to a private dataset. All other ids refer to the public
+The ids 1-9 refer to a private dataset. All other ids refer to the public
 dataset corresponding to https://github.com/serviceprototypinglab/cndbbench
 in the versions starting from February 2017.
 
@@ -172,7 +172,7 @@ State:
 ----------------------------------------
 
 Id:
-    4
+    5
 Title:
     MultiTenant test for option C.
 Date:
@@ -208,4 +208,102 @@ State:
     Success
 
 ----------------------------------------
+
+Id: 6
+Title: Selects test (crate)
+Date: 09/12/2016
+Time_start:
+Time_end:
+Description:
+	Select test in crate cluster with only the node master. It has 100 iterations.
+Previous steps:
+Instructions:
+    1. Clone the repository arkis/databaseComparison
+    2. cd databaseComparison/Benchmark/documentdb
+    3. docker build -t documentdbtest ./benchmark
+    4. docker-compose up (using the crate docker file)
+Result: In pdf.
+Conclusions:
+State: 
+	Success
+
 ----------------------------------------
+
+Id: 7
+Title: Resilience selects test (crate)
+Date: 09/12/2016
+Time_start:
+Time_end:
+Description:
+	Select test in crate cluster with only the node master. It has 100 iterations.
+Previous steps:
+	Create a crate cluster with 3 node using docker.
+Instructions:
+    1. Clone the repository arkis/databaseComparison
+    2. cd databaseComparison/Benchmark/documentdb
+    3. docker build -t documentdbtest ./benchmark
+    4. docker-compose up (using the crate docker file)
+    5. Kill two containers in the 20 iteration. 
+Result: In pdf.
+Conclusions:
+State: 
+	Success
+
+----------------------------------------
+
+Id: 8
+Title: BlobStorage experiment
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State: 
+
+----------------------------------------
+
+Id: 9
+Title: Documentdb select test (old repository)
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State: 
+
+----------------------------------------
+
+Id: 10.a
+Title: Documentdb select test
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State: Fail
+
+----------------------------------------
+
+Id: 10.b
+Title: Documentdb select test
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State: 
+
+----------------------------------------
+
