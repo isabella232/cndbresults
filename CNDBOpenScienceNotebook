@@ -7,7 +7,7 @@ and examined in the paper: «Cloud-Native Databases: An Application Perspective.
 
 Some further results are summarised in the PDF file in this repository.
 
-The ids 1-9 refer to a private dataset. All other ids refer to the public
+The ids 1-8 refer to a private dataset. All other ids refer to the public
 dataset corresponding to https://github.com/serviceprototypinglab/cndbbench
 in the versions starting from February 2017.
 
@@ -263,23 +263,10 @@ Result:
 Conclusions:
 State: 
 
-----------------------------------------
-
-Id: 9
-Title: Documentdb select test (old repository)
-Date:
-Time_start:
-Time_end:
-Description:
-Previous steps:
-Instructions:
-Result:
-Conclusions:
-State: 
 
 ----------------------------------------
 
-Id: 10.a
+Id: 9.a
 Title: Documentdb select test
 Date:
 Time_start:
@@ -293,7 +280,7 @@ State: Fail
 
 ----------------------------------------
 
-Id: 10.b
+Id: 9.b
 Title: Documentdb select test
 Date:
 Time_start:
@@ -303,7 +290,8 @@ Previous steps:
 Instructions:
 Result:
 Conclusions:
-State: 
+State:
+	Success
 
 ----------------------------------------
 
