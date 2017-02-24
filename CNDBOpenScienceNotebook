@@ -7,7 +7,7 @@ and examined in the paper: «Cloud-Native Databases: An Application Perspective.
 
 Some further results are summarised in the PDF file in this repository.
 
-The ids 1-8 refer to a private dataset. All other ids refer to the public
+The ids 1-18 refer to a private dataset. All other ids refer to the public
 dataset corresponding to https://github.com/serviceprototypinglab/cndbbench
 in the versions starting from February 2017.
 
@@ -266,7 +266,162 @@ State:
 
 ----------------------------------------
 
+
 Id: 9
+Title: Mongo Scalability (mongo-cluster-sequential)
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State: 
+
+
+----------------------------------------
+
+
+
+Id: 10
+Title: Mongo Scalability (mongo-cluster-parallel-primary)
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State: 
+
+
+----------------------------------------
+
+
+
+Id: 11
+Title: Mongo Scalability (mongo-cluster-parallel-all)
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State: 
+
+
+----------------------------------------
+
+
+
+Id: 12
+Title: Mongo Scalability (mongo-single-sequential)
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State: 
+
+
+----------------------------------------
+
+
+
+Id: 13
+Title: Mongo Scalability (mongo-single-parallel)
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State: 
+
+
+----------------------------------------
+
+Id: 14
+Title: Crate Scalability (crate-cluster-sequential)
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State: 
+
+----------------------------------------
+
+Id: 15
+Title: Crate Scalability (crate-cluster-parallel-primary)
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State: 
+
+----------------------------------------
+
+Id: 16
+Title: Crate Scalability (crate-cluster-parallel-all)
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State: 
+
+----------------------------------------
+
+Id: 17
+Title: Crate Scalability (crate-single-sequential)
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State: 
+
+----------------------------------------
+
+Id: 18
+Title: Crate Scalability (crate-single-parallel)
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State: 
+
+
+----------------------------------------
+
+Id: 19
 Title: Documentdb insert test bench local
 Date:
 Time_start:
@@ -282,7 +437,7 @@ State:
 ----------------------------------------
 
 
-Id: 10.a
+Id: 20
 Title: Documentdb select test bench local
 Date:
 Time_start:
@@ -296,7 +451,7 @@ State: Fail
 
 ----------------------------------------
 
-Id: 10.b
+Id: 21
 Title: Documentdb select test bench local
 Date:
 Time_start:
@@ -312,7 +467,7 @@ State:
 ----------------------------------------
 
 
-Id: 11
+Id: 22
 Title: Documentdb select test bench cloud
 Date:
 Time_start:
@@ -327,7 +482,7 @@ State:
 
 ----------------------------------------
 
-Id: 12
+Id: 23
 Title: Mongo local insert test bench local
 Date:
 Time_start:
@@ -343,7 +498,7 @@ State:
 ----------------------------------------
 
 
-Id: 13
+Id: 24
 Title: Mongo local select test bench local
 Date:
 Time_start:
@@ -359,7 +514,7 @@ State:
 
 ----------------------------------------
 
-Id: 14
+Id: 25
 Title: Mongo cloud insert test bench local
 Date:
 Time_start:
@@ -375,7 +530,7 @@ State:
 ----------------------------------------
 
 
-Id: 15
+Id: 26
 Title: Mongo cloud select test bench local
 Date:
 Time_start:
@@ -391,7 +546,7 @@ State:
 
 ----------------------------------------
 
-Id: 16
+Id: 27
 Title: Mongo cloud select test bench cloud
 Date:
 Time_start:
@@ -407,7 +562,7 @@ State:
 ----------------------------------------
 
 
-Id: 17
+Id: 28
 Title: Documentdb price (teoric)
 Date:
 Time_start:
