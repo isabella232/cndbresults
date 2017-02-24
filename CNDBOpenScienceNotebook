@@ -222,7 +222,7 @@ Instructions:
     2. cd databaseComparison/Benchmark/documentdb
     3. docker build -t documentdbtest ./benchmark
     4. docker-compose up (using the crate docker file)
-Result: In pdf.
+Result: In appendix.
 Conclusions:
 State: 
 	Success
@@ -259,10 +259,10 @@ Time_end:
 Description:
 Previous steps:
 Instructions:
-Result:
+Result: In appendix.
 Conclusions:
 State: 
-
+	Success
 
 ----------------------------------------
 
@@ -273,11 +273,13 @@ Date:
 Time_start:
 Time_end:
 Description:
+	Select test running in one thread to a cluster with 3 nodes in mongo using docker.
 Previous steps:
 Instructions:
-Result:
+Result: In appendix.
 Conclusions:
 State: 
+	Success
 
 
 ----------------------------------------
@@ -290,12 +292,13 @@ Date:
 Time_start:
 Time_end:
 Description:
+	Select test running with 100 threads to a cluster with 3 nodes in mongo using docker. The connection was only to the primary node.
 Previous steps:
 Instructions:
-Result:
+Result: In appendix.
 Conclusions:
 State: 
-
+	Success
 
 ----------------------------------------
 
@@ -307,11 +310,13 @@ Date:
 Time_start:
 Time_end:
 Description:
+	Select test running with 100 threads to a cluster with 3 nodes in mongo using docker. The connection was to the all cluster.
 Previous steps:
 Instructions:
-Result:
+Result: In appendix.
 Conclusions:
 State: 
+	Success
 
 
 ----------------------------------------
@@ -323,12 +328,13 @@ Title: Mongo Scalability (mongo-single-sequential)
 Date:
 Time_start:
 Time_end:
-Description:
+Description: Select test running in one thread to single mongo container.
 Previous steps:
 Instructions:
-Result:
+Result: In appendix.
 Conclusions:
 State: 
+	Success
 
 
 ----------------------------------------
@@ -340,12 +346,13 @@ Title: Mongo Scalability (mongo-single-parallel)
 Date:
 Time_start:
 Time_end:
-Description:
+Description: Select test running with 100 threads to single mongo container.
 Previous steps:
 Instructions:
-Result:
+Result: In appendix.
 Conclusions:
 State: 
+	Success
 
 
 ----------------------------------------
@@ -356,11 +363,13 @@ Date:
 Time_start:
 Time_end:
 Description:
+	Select test running in one thread to a cluster with 3 nodes in mongo using docker. 
 Previous steps:
 Instructions:
-Result:
+Result: In appendix.
 Conclusions:
 State: 
+	Success
 
 ----------------------------------------
 
@@ -370,11 +379,13 @@ Date:
 Time_start:
 Time_end:
 Description:
+	Select test running with 100 threads to a cluster with 3 nodes in mongo using docker. The connection was only to the primary node.
 Previous steps:
 Instructions:
-Result:
+Result: In appendix.
 Conclusions:
 State: 
+	Success
 
 ----------------------------------------
 
@@ -384,11 +395,14 @@ Date:
 Time_start:
 Time_end:
 Description:
+	Select test running with 100 threads to a cluster with 3 nodes in mongo using docker. The connection was only to the full cluster.
+
 Previous steps:
 Instructions:
-Result:
+Result: In appendix.
 Conclusions:
 State: 
+	Success
 
 ----------------------------------------
 
@@ -397,12 +411,13 @@ Title: Crate Scalability (crate-single-sequential)
 Date:
 Time_start:
 Time_end:
-Description:
+Description: Select test running in one thread to single mongo container.
 Previous steps:
 Instructions:
-Result:
+Result: In appendix.
 Conclusions:
 State: 
+	Success
 
 ----------------------------------------
 
@@ -411,12 +426,13 @@ Title: Crate Scalability (crate-single-parallel)
 Date:
 Time_start:
 Time_end:
-Description:
+Description: Select test running with 100 threads to single crate container.
 Previous steps:
 Instructions:
-Result:
+Result: In appendix.
 Conclusions:
 State: 
+	Success
 
 
 ----------------------------------------
@@ -565,7 +581,7 @@ State:
 Id: 28
 Title: Documentdb price (teoric)
 Date:
-Time_start:
+Time_start:b
 Time_end:
 Description:
 Previous steps:
