@@ -266,22 +266,8 @@ State:
 
 ----------------------------------------
 
-Id: 9.a
-Title: Documentdb select test
-Date:
-Time_start:
-Time_end:
-Description:
-Previous steps:
-Instructions:
-Result:
-Conclusions:
-State: Fail
-
-----------------------------------------
-
-Id: 9.b
-Title: Documentdb select test
+Id: 9
+Title: Documentdb insert test bench local
 Date:
 Time_start:
 Time_end:
@@ -294,4 +280,146 @@ State:
 	Success
 
 ----------------------------------------
+
+
+Id: 10.a
+Title: Documentdb select test bench local
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State: Fail
+
+----------------------------------------
+
+Id: 10.b
+Title: Documentdb select test bench local
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State:
+	Success
+
+----------------------------------------
+
+
+Id: 11
+Title: Documentdb select test bench cloud
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State:
+	Success
+
+----------------------------------------
+
+Id: 12
+Title: Mongo local insert test bench local
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State:
+	Success
+
+----------------------------------------
+
+
+Id: 13
+Title: Mongo local select test bench local
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State:
+	Success
+
+
+----------------------------------------
+
+Id: 14
+Title: Mongo cloud insert test bench local
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State:
+	Success
+
+----------------------------------------
+
+
+Id: 15
+Title: Mongo cloud select test bench local
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State:
+	Success
+
+
+----------------------------------------
+
+Id: 16
+Title: Mongo cloud select test bench cloud
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State:
+	Success
+
+----------------------------------------
+
+
+Id: 17
+Title: Documentdb price (teoric)
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State:
+	Success
+
+----------------------------------------
+
 
