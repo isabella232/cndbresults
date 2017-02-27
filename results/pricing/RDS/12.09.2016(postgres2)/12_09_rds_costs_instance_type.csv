@@ -1,0 +1,3 @@
+InstanceType,db.t2.micro ($),db.r3.large ($),db.t1.micro ($),No InstanceType ($),Total cost ($)
+InstanceType Total,0.185,3.20,0.175,0.10224293000000001,3.66224293
+2016-09-12,0.185,3.2,0.175,0.10224293000000001,3.66224293

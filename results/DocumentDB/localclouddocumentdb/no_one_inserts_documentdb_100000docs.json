@@ -1,0 +1,1 @@
+{"create_connexion_time": 3.337860107421875e-06, "close_connexion_time": 0.010975837707519531, "create_database_time": 4.6253204345703125e-05, "create_table_time": 1.0013580322265625e-05, "inserts_time_all": {"documents": 739.5395917892456, "total": 739.5395917892456}, "inserts_time_one": 0, "delete_table_time": 0, "stats": 0, "size": 0, "total_time": 746.2281110286713}

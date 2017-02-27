@@ -1,0 +1,637 @@
+CNDB benchmark results - open science notebook
+
+The experiments described herein were conducted as part of the Cloud-Native
+Applications research initiative at the Service Prototyping Lab at Zurich
+University of Applied Sciences. The results were partially evaluated
+and examined in the paper: «Cloud-Native Databases: An Application Perspective.»
+
+Some further results are summarised in the PDF file in this repository.
+
+The ids 1-18 refer to a private dataset. All other ids refer to the public
+dataset corresponding to https://github.com/serviceprototypinglab/cndbbench
+in the versions starting from February 2017.
+
+----------------------------------------
+Machine A: Apple MacBook Pro 12 with Intel Core i5 processor clocked at 2.7GHz
+and 16 GB RAM. Running Mac OS X El Capitan 10.11.5.
+----------------------------------------
+Git repository: https://github.com/serviceprototypinglab/cndbbench for test with id > 18
+----------------------------------------
+
+
+The experiments are described uniformly with the following metadata for easier
+reproducibility:
+
+Id:
+Title:
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result:
+Conclusions:
+State: 
+
+----------------------------------------
+
+Id:
+    1
+Title: 
+    Selects test documentdb with a local benchmark. 
+Date: 
+    13/12/2016
+Time_start: 10:05
+Time_end: 10:05
+Description: 
+    Selects test running the benchmark in the machine A and the database is a
+    instance of Documentdb in Microsoft Azure. The zone is: West Europe.
+    (S2/1000 requests/s limit)
+Previous steps: 
+    Insert in the database documentdb the collections PropertyTypes,
+    IDXProperty76, IDXProperty78, IDXProperty79, BlobStore.
+Instructions:
+    1. Clone the repository arkis/databaseComparison
+    2. cd databaseComparison/Benchmark/documentdb
+    3. docker build -t documentdbtest ./benchmark
+    4. docker-compose up
+Results:
+    results/13-12-2016/documentdbtest/selectdocumentdb.txt
+Conclusions: 
+    Exception with error: request rate is large.
+    https://blogs.msdn.microsoft.com/bigdatasupport/2015/09/02/dealing-with-requestratetoolarge-errors-in-azure-documentdb-and-testing-performance/
+    It is a error by design. Sending requests at a rate more than
+    our number of request units/sec.
+State:
+    Failure
+
+----------------------------------------
+
+Id:
+    2
+Title:
+    Select crate benchmark and database in local
+Date: 
+    12/13/2016
+Time_start:
+    ~15:30
+Time_end:
+    ~16:00
+Description:
+    Selects test using docker compose. The benchmark and the database are
+    in the machine A. 
+Previous steps:
+    Insert in the database crate the collections PropertyTypes,
+    IDXProperty76, IDXProperty78, IDXProperty79, BlobStore.
+Instructions:
+    1. Clone the repository arkis/databaseComparison
+    2. cd databaseComparison/Benchmark/
+    3. docker build -t benchmark . (using the method s_crate())
+    4. docker-compose up (Using the docker-compose-crate.yml)
+Result:
+    results/13-12-2016/cratetest/selects_crate_no_limits.json
+Conclusions:
+    Correct times without the usual limit with crate.
+State: 
+    Success
+
+----------------------------------------  
+
+Id:
+    3
+Title:
+    MultiTenant test for option B.
+Date:
+    14/12/2016
+Time_start:
+    9:28
+Time_end:
+    9:37
+Description:
+    Selects test with multitenant for the option B implemented in google cloud.
+    The database that we use is Mongodb.
+    The test is running in two ways: with 10 threads (one per tenant) and in 
+    only one thread.
+Previous steps:
+    A.Install the option B for mongodb in kubernetes:
+        1. Clone the git repository clone/containers
+        2. cd containers/KubernetesBlueprints/kubernetes1.4/simple/MultiTenant/persistent/googlepersistence/OPTIONB
+        3. kubectl create -f .
+    B. Run the insert method for the option B for inserts the collections
+    PropertyTypes, IDXProperty76, IDXProperty78, IDXProperty79, BlobStore, with
+    10 tenants. 
+Instructions: 
+    1. git clone arkis/databaseComparison
+    2. Run the method multitenant_selects for option B with True for 
+    the option thread.
+    3. Run the method multitenant_selects for option B with False for 
+    the option thread.
+Result:
+    - results/14-12-2016/bnot.json
+    - results/14-12-2016/bwt.json
+Conclusions:
+State: 
+    Success
+
+----------------------------------------
+
+Id:
+    4
+Title:
+    MultiTenant test for option B.
+Date:
+    14/12/2016
+Time_start:
+    ~10:00
+Time_end:
+    ~10:00
+Description:
+    Selects test with multitenant for the option A implemented in google cloud.
+    The database that we use is Mongodb.
+    The test is running in two ways: with 10 threads (one per tenant) and in 
+    only one thread.
+Previous steps:
+    A.Install the option A for mongodb in kubernetes:
+        1. Clone the git repository clone/containers
+        2. cd containers/KubernetesBlueprints/kubernetes1.4/simple/MultiTenant/persistent/googlepersistence/OPTIONA
+        3. kubectl create -f .
+    B. Run the insert method for the option A for inserts the collections
+    PropertyTypes, IDXProperty76, IDXProperty78, IDXProperty79, BlobStore, with
+    10 tenants. 
+Instructions: 
+    1. git clone arkis/databaseComparison
+    2. Run the method multitenant_selects for option A with True for 
+    the option thread.
+    3. Run the method multitenant_selects for option A with False for 
+    the option thread.
+Result:
+    - results/14-12-2016/anot.json
+    - results/14-12-2016/awt.json
+Conclusions:
+State: 
+    Success
+
+----------------------------------------
+
+Id:
+    5
+Title:
+    MultiTenant test for option C.
+Date:
+    14/12/2016
+Time_start:
+    ~10:30
+Time_end:
+    ~10:30
+Description:
+    Selects test with multitenant for the option C implemented in google cloud.
+    The database that we use is Mongodb.
+    The test is running in two ways: with 10 threads (one per tenant) and in 
+    only one thread.
+Previous steps:
+    A.Install the option C for mongodb in kubernetes:
+        1. Clone the git repository clone/containers
+        2. cd containers/KubernetesBlueprints/kubernetes1.4/simple/MultiTenant/persistent/googlepersistence/OPTIONC
+        3. kubectl create -f .
+    B. Run the insert method for the option C for inserts the collections
+    PropertyTypes, IDXProperty76, IDXProperty78, IDXProperty79, BlobStore, with
+    10 tenants. 
+Instructions: 
+    1. git clone arkis/databaseComparison
+    2. Run the method multitenant_selects for option C with True for 
+    the option thread.
+    3. Run the method multitenant_selects for option C with False for 
+    the option thread.
+Result:
+    - results/14-12-2016/bnot.json
+    - results/14-12-2016/bwt.json
+Conclusions:
+State: 
+    Success
+
+----------------------------------------
+
+Id: 6
+Title: Selects test (crate)
+Date: 09/12/2016
+Time_start:
+Time_end:
+Description:
+	Select test in crate cluster with only the node master. It has 100 iterations.
+Previous steps:
+Instructions:
+    1. Clone the repository arkis/databaseComparison
+    2. cd databaseComparison/Benchmark/documentdb
+    3. docker build -t documentdbtest ./benchmark
+    4. docker-compose up (using the crate docker file)
+Result: In appendix and results/crate
+Conclusions:
+State: 
+	Success
+
+----------------------------------------
+
+Id: 7
+Title: Resilience selects test (crate)
+Date: 09/12/2016
+Time_start:
+Time_end:
+Description:
+	Select test in crate cluster with only the node master. It has 100 iterations.
+Previous steps:
+	Create a crate cluster with 3 node using docker.
+Instructions:
+    1. Clone the repository arkis/databaseComparison
+    2. cd databaseComparison/Benchmark/documentdb
+    3. docker build -t documentdbtest ./benchmark
+    4. docker-compose up (using the crate docker file)
+    5. Kill two containers in the 20 iteration. 
+Result: In appendix and results/resilience
+Conclusions:
+State: 
+	Success
+
+----------------------------------------
+
+Id: 8
+Title: BlobStorage experiment
+Date:
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+Result: In appendix.
+Conclusions:
+State: 
+	Success
+
+----------------------------------------
+
+
+Id: 9
+Title: Mongo Scalability (mongo-cluster-sequential)
+Date: 12/16
+Time_start:
+Time_end:
+Description:
+	Select test running in one thread to a cluster with 3 nodes in mongo using docker.
+Previous steps:
+	1. Insert mongo data
+Instructions:
+	1. Use MongoScalability.py with the correct configuration (see description)
+Result: In appendix.
+Conclusions:
+State: 
+	Success
+
+
+----------------------------------------
+
+
+
+Id: 10
+Title: Mongo Scalability (mongo-cluster-parallel-primary)
+Date: 12/16
+Time_start:
+Time_end:
+Description:
+	Select test running with 100 threads to a cluster with 3 nodes in mongo using docker. The connection was only to the primary node.
+Previous steps:
+Instructions:
+	1. Use MongoScalability.py with the correct configuration (see description)
+Result: In appendix.
+Conclusions:
+State: 
+	Success
+
+----------------------------------------
+
+
+
+Id: 11
+Title: Mongo Scalability (mongo-cluster-parallel-all)
+Date: 12/16
+Time_start:
+Time_end:
+Description:
+	Select test running with 100 threads to a cluster with 3 nodes in mongo using docker. The connection was to the all cluster.
+Previous steps:
+Instructions:
+	1. Use MongoScalability.py with the correct configuration (see description)
+Result: In appendix.
+Conclusions:
+State: 
+	Success
+
+
+----------------------------------------
+
+
+
+Id: 12
+Title: Mongo Scalability (mongo-single-sequential)
+Date: 12/16
+Time_start:
+Time_end:
+Description: Select test running in one thread to single mongo container.
+Previous steps:
+Instructions:
+	1. Use MongoScalability.py with the correct configuration (see description)
+Result: In appendix.
+Conclusions:
+State: 
+	Success
+
+
+----------------------------------------
+
+
+
+Id: 13
+Title: Mongo Scalability (mongo-single-parallel)
+Date: 12/16
+Time_start:
+Time_end:
+Description: Select test running with 100 threads to single mongo container.
+Previous steps:
+Instructions:
+	1. Use MongoScalability.py with the correct configuration (see description)
+Result: In appendix.
+Conclusions:
+State: 
+	Success
+
+
+----------------------------------------
+
+Id: 14
+Title: Crate Scalability (crate-cluster-sequential)
+Date: 12/16
+Time_start:
+Time_end:
+Description:
+	Select test running in one thread to a cluster with 3 nodes in mongo using docker. 
+Previous steps:
+Instructions:
+	1. Use CrateScalability.py with the correct configuration (see description)
+Result: In appendix.
+Conclusions:
+State: 
+	Success
+
+----------------------------------------
+
+Id: 15
+Title: Crate Scalability (crate-cluster-parallel-primary)
+Date: 12/16
+Time_start:
+Time_end:
+Description:
+	Select test running with 100 threads to a cluster with 3 nodes in mongo using docker. The connection was only to the primary node.
+Previous steps:
+Instructions:
+	1. Use CrateScalability.py with the correct configuration (see description)
+Result: In appendix.
+Conclusions:
+State: 
+	Success
+
+----------------------------------------
+
+Id: 16
+Title: Crate Scalability (crate-cluster-parallel-all)
+Date: 12/16
+Time_start:
+Time_end:
+Description:
+	Select test running with 100 threads to a cluster with 3 nodes in mongo using docker. The connection was only to the full cluster.
+Previous steps:
+Instructions:
+	1. Use CrateScalability.py with the correct configuration (see description)
+Result: In appendix.
+Conclusions:
+State: 
+	Success
+
+----------------------------------------
+
+Id: 17
+Title: Crate Scalability (crate-single-sequential)
+Date: 12/16
+Time_start:
+Time_end:
+Description: Select test running in one thread to single mongo container.
+Previous steps:
+Instructions:
+	1. Use CrateScalability.py with the correct configuration (see description)
+Result: In appendix.
+Conclusions:
+State: 
+	Success
+
+----------------------------------------
+
+Id: 18
+Title: Crate Scalability (crate-single-parallel)
+Date: 12/16
+Time_start:
+Time_end:
+Description: Select test running with 100 threads to single crate container.
+Previous steps:
+Instructions:
+	1. Use CrateScalability.py with the correct configuration (see description)
+Result: In appendix.
+Conclusions:
+State: 
+	Success
+
+
+----------------------------------------
+
+Id: 19
+Title: Documentdb insert test bench local
+Date: 24/12/2017
+Time_start:
+Time_end:
+Description:
+	Insert 100.000 of docs (generic data) in a collection (documents) with 10.000 RU/s
+Previous steps:
+	Create the collection documents with 10.000 RU/s
+Instructions:
+	 1. And the test name in the configuration file and run the benchmark for documentdb.
+Result:
+	- results/DocumentDB/cloudlocaldocumentdb
+Conclusions:
+State:
+	Success
+
+----------------------------------------
+
+
+Id: 20
+Title: Documentdb select test bench local
+Date: 24/12/2017
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+	 1. And the test name in the configuration file and run the benchmark for documentdb.
+Result: No results.
+Conclusions:
+     The test was stopped in the iteration 58/100.
+     Probably it was because the test used more RU/s that we reserved.
+State: Fail
+
+----------------------------------------
+
+Id: 21
+Title: Documentdb select test bench local
+Date: 24/12/2017
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+	 1. And the test name in the configuration file and run the benchmark for documentdb.
+Result:
+	- results/DocumentDB/cloudlocaldocumentdb
+Conclusions:
+State:
+	Success
+
+----------------------------------------
+
+
+Id: 22
+Title: Documentdb select test bench cloud
+Date: 24/12/2017
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+	 1. And the test name in the configuration file and run the benchmark for documentdb.
+Result:
+	- results/DocumentDB/cloudclouddocumentdb
+Conclusions:
+State:
+	Success
+
+----------------------------------------
+
+Id: 23
+Title: Mongo local insert test bench local
+Date: 24/12/2017
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+	 1. And the test name in the configuration file and run the docker-compose file with mongo.
+Result:
+	- results/Mongo/locallocalmongo
+Conclusions:
+State:
+	Success
+
+----------------------------------------
+
+
+Id: 24
+Title: Mongo local select test bench local
+Date: 24/12/2017
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+	 1. And the test name in the configuration file and run the docker-compose file with mongo.
+Result:
+	- results/Mongo/locallocalmongo
+Conclusions:
+State:
+	Success
+
+
+----------------------------------------
+
+Id: 25
+Title: Mongo cloud insert test bench local
+Date: 24/12/2017
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+	 1. And the test name in the configuration file and run the docker-compose file with mongo.
+Result:
+	- results/Mongo/localcloudmongo
+Conclusions:
+State:
+	Success
+
+----------------------------------------
+
+
+Id: 26
+Title: Mongo cloud select test bench local
+Date: 24/12/2017
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+	 1. And the test name in the configuration file and run the docker-compose file with mongo.
+Result:
+	- results/Mongo/localcloudmongo
+Conclusions:
+State:
+	Success
+
+
+----------------------------------------
+
+Id: 27
+Title: Mongo cloud select test bench cloud
+Date: 24/12/2017
+Time_start:
+Time_end:
+Description:
+Previous steps:
+Instructions:
+	 1. And the test name in the configuration file and run the docker-compose file with mongo.
+Result:
+	- results/Mongo/cloudcloudmongo
+Conclusions:
+State:
+	Success
+
+----------------------------------------
+
+
+Id: 28
+Title: Documentdb price
+Date: 24/12/2017
+Time_start:
+Time_end:
+Description: Using https://www.documentdb.com/capacityplanner# we calculated the price for the same performance that mongodb in azure.
+Previous steps:
+	Run mongodb select test in azure with 100.000 docs of generic data.
+Instructions:
+	1. Go to https://www.documentdb.com/capacityplanner
+	2. Add example json of generic data. 
+	3. Add number of doc read/seconds depending mongo results
+	4. Calculate number of RU/s 
+	5. See the price for these RU/s
+Result:
+	In appendix.
+Conclusions:
+State:
+	Success
+
+----------------------------------------
+
+
