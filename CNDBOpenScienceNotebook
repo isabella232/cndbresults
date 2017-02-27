@@ -15,6 +15,9 @@ in the versions starting from February 2017.
 Machine A: Apple MacBook Pro 12 with Intel Core i5 processor clocked at 2.7GHz
 and 16 GB RAM. Running Mac OS X El Capitan 10.11.5.
 ----------------------------------------
+Git repository: https://github.com/serviceprototypinglab/cndbbench for test with id > 18
+----------------------------------------
+
 
 The experiments are described uniformly with the following metadata for easier
 reproducibility:
@@ -222,7 +225,7 @@ Instructions:
     2. cd databaseComparison/Benchmark/documentdb
     3. docker build -t documentdbtest ./benchmark
     4. docker-compose up (using the crate docker file)
-Result: In appendix.
+Result: In appendix and results/crate
 Conclusions:
 State: 
 	Success
@@ -244,7 +247,7 @@ Instructions:
     3. docker build -t documentdbtest ./benchmark
     4. docker-compose up (using the crate docker file)
     5. Kill two containers in the 20 iteration. 
-Result: In pdf.
+Result: In appendix and results/resilience
 Conclusions:
 State: 
 	Success
@@ -269,13 +272,15 @@ State:
 
 Id: 9
 Title: Mongo Scalability (mongo-cluster-sequential)
-Date:
+Date: 12/16
 Time_start:
 Time_end:
 Description:
 	Select test running in one thread to a cluster with 3 nodes in mongo using docker.
 Previous steps:
+	1. Insert mongo data
 Instructions:
+	1. Use MongoScalability.py with the correct configuration (see description)
 Result: In appendix.
 Conclusions:
 State: 
@@ -288,13 +293,14 @@ State:
 
 Id: 10
 Title: Mongo Scalability (mongo-cluster-parallel-primary)
-Date:
+Date: 12/16
 Time_start:
 Time_end:
 Description:
 	Select test running with 100 threads to a cluster with 3 nodes in mongo using docker. The connection was only to the primary node.
 Previous steps:
 Instructions:
+	1. Use MongoScalability.py with the correct configuration (see description)
 Result: In appendix.
 Conclusions:
 State: 
@@ -306,13 +312,14 @@ State:
 
 Id: 11
 Title: Mongo Scalability (mongo-cluster-parallel-all)
-Date:
+Date: 12/16
 Time_start:
 Time_end:
 Description:
 	Select test running with 100 threads to a cluster with 3 nodes in mongo using docker. The connection was to the all cluster.
 Previous steps:
 Instructions:
+	1. Use MongoScalability.py with the correct configuration (see description)
 Result: In appendix.
 Conclusions:
 State: 
@@ -325,12 +332,13 @@ State:
 
 Id: 12
 Title: Mongo Scalability (mongo-single-sequential)
-Date:
+Date: 12/16
 Time_start:
 Time_end:
 Description: Select test running in one thread to single mongo container.
 Previous steps:
 Instructions:
+	1. Use MongoScalability.py with the correct configuration (see description)
 Result: In appendix.
 Conclusions:
 State: 
@@ -343,12 +351,13 @@ State:
 
 Id: 13
 Title: Mongo Scalability (mongo-single-parallel)
-Date:
+Date: 12/16
 Time_start:
 Time_end:
 Description: Select test running with 100 threads to single mongo container.
 Previous steps:
 Instructions:
+	1. Use MongoScalability.py with the correct configuration (see description)
 Result: In appendix.
 Conclusions:
 State: 
@@ -359,13 +368,14 @@ State:
 
 Id: 14
 Title: Crate Scalability (crate-cluster-sequential)
-Date:
+Date: 12/16
 Time_start:
 Time_end:
 Description:
 	Select test running in one thread to a cluster with 3 nodes in mongo using docker. 
 Previous steps:
 Instructions:
+	1. Use CrateScalability.py with the correct configuration (see description)
 Result: In appendix.
 Conclusions:
 State: 
@@ -375,13 +385,14 @@ State:
 
 Id: 15
 Title: Crate Scalability (crate-cluster-parallel-primary)
-Date:
+Date: 12/16
 Time_start:
 Time_end:
 Description:
 	Select test running with 100 threads to a cluster with 3 nodes in mongo using docker. The connection was only to the primary node.
 Previous steps:
 Instructions:
+	1. Use CrateScalability.py with the correct configuration (see description)
 Result: In appendix.
 Conclusions:
 State: 
@@ -391,14 +402,14 @@ State:
 
 Id: 16
 Title: Crate Scalability (crate-cluster-parallel-all)
-Date:
+Date: 12/16
 Time_start:
 Time_end:
 Description:
 	Select test running with 100 threads to a cluster with 3 nodes in mongo using docker. The connection was only to the full cluster.
-
 Previous steps:
 Instructions:
+	1. Use CrateScalability.py with the correct configuration (see description)
 Result: In appendix.
 Conclusions:
 State: 
@@ -408,12 +419,13 @@ State:
 
 Id: 17
 Title: Crate Scalability (crate-single-sequential)
-Date:
+Date: 12/16
 Time_start:
 Time_end:
 Description: Select test running in one thread to single mongo container.
 Previous steps:
 Instructions:
+	1. Use CrateScalability.py with the correct configuration (see description)
 Result: In appendix.
 Conclusions:
 State: 
@@ -423,12 +435,13 @@ State:
 
 Id: 18
 Title: Crate Scalability (crate-single-parallel)
-Date:
+Date: 12/16
 Time_start:
 Time_end:
 Description: Select test running with 100 threads to single crate container.
 Previous steps:
 Instructions:
+	1. Use CrateScalability.py with the correct configuration (see description)
 Result: In appendix.
 Conclusions:
 State: 
@@ -439,13 +452,17 @@ State:
 
 Id: 19
 Title: Documentdb insert test bench local
-Date:
+Date: 24/12/2017
 Time_start:
 Time_end:
 Description:
+	Insert 100.000 of docs (generic data) in a collection (documents) with 10.000 RU/s
 Previous steps:
+	Create the collection documents with 10.000 RU/s
 Instructions:
+	 1. And the test name in the configuration file and run the benchmark for documentdb.
 Result:
+	- results/DocumentDB/cloudlocaldocumentdb
 Conclusions:
 State:
 	Success
@@ -455,27 +472,32 @@ State:
 
 Id: 20
 Title: Documentdb select test bench local
-Date:
+Date: 24/12/2017
 Time_start:
 Time_end:
 Description:
 Previous steps:
 Instructions:
-Result:
+	 1. And the test name in the configuration file and run the benchmark for documentdb.
+Result: No results.
 Conclusions:
+     The test was stopped in the iteration 58/100.
+     Probably it was because the test used more RU/s that we reserved.
 State: Fail
 
 ----------------------------------------
 
 Id: 21
 Title: Documentdb select test bench local
-Date:
+Date: 24/12/2017
 Time_start:
 Time_end:
 Description:
 Previous steps:
 Instructions:
+	 1. And the test name in the configuration file and run the benchmark for documentdb.
 Result:
+	- results/DocumentDB/cloudlocaldocumentdb
 Conclusions:
 State:
 	Success
@@ -485,13 +507,15 @@ State:
 
 Id: 22
 Title: Documentdb select test bench cloud
-Date:
+Date: 24/12/2017
 Time_start:
 Time_end:
 Description:
 Previous steps:
 Instructions:
+	 1. And the test name in the configuration file and run the benchmark for documentdb.
 Result:
+	- results/DocumentDB/cloudclouddocumentdb
 Conclusions:
 State:
 	Success
@@ -500,13 +524,15 @@ State:
 
 Id: 23
 Title: Mongo local insert test bench local
-Date:
+Date: 24/12/2017
 Time_start:
 Time_end:
 Description:
 Previous steps:
 Instructions:
+	 1. And the test name in the configuration file and run the docker-compose file with mongo.
 Result:
+	- results/Mongo/locallocalmongo
 Conclusions:
 State:
 	Success
@@ -516,13 +542,15 @@ State:
 
 Id: 24
 Title: Mongo local select test bench local
-Date:
+Date: 24/12/2017
 Time_start:
 Time_end:
 Description:
 Previous steps:
 Instructions:
+	 1. And the test name in the configuration file and run the docker-compose file with mongo.
 Result:
+	- results/Mongo/locallocalmongo
 Conclusions:
 State:
 	Success
@@ -532,13 +560,15 @@ State:
 
 Id: 25
 Title: Mongo cloud insert test bench local
-Date:
+Date: 24/12/2017
 Time_start:
 Time_end:
 Description:
 Previous steps:
 Instructions:
+	 1. And the test name in the configuration file and run the docker-compose file with mongo.
 Result:
+	- results/Mongo/localcloudmongo
 Conclusions:
 State:
 	Success
@@ -548,13 +578,15 @@ State:
 
 Id: 26
 Title: Mongo cloud select test bench local
-Date:
+Date: 24/12/2017
 Time_start:
 Time_end:
 Description:
 Previous steps:
 Instructions:
+	 1. And the test name in the configuration file and run the docker-compose file with mongo.
 Result:
+	- results/Mongo/localcloudmongo
 Conclusions:
 State:
 	Success
@@ -564,13 +596,15 @@ State:
 
 Id: 27
 Title: Mongo cloud select test bench cloud
-Date:
+Date: 24/12/2017
 Time_start:
 Time_end:
 Description:
 Previous steps:
 Instructions:
+	 1. And the test name in the configuration file and run the docker-compose file with mongo.
 Result:
+	- results/Mongo/cloudcloudmongo
 Conclusions:
 State:
 	Success
@@ -579,14 +613,21 @@ State:
 
 
 Id: 28
-Title: Documentdb price (teoric)
-Date:
-Time_start:b
+Title: Documentdb price
+Date: 24/12/2017
+Time_start:
 Time_end:
-Description:
+Description: Using https://www.documentdb.com/capacityplanner# we calculated the price for the same performance that mongodb in azure.
 Previous steps:
+	Run mongodb select test in azure with 100.000 docs of generic data.
 Instructions:
+	1. Go to https://www.documentdb.com/capacityplanner
+	2. Add example json of generic data. 
+	3. Add number of doc read/seconds depending mongo results
+	4. Calculate number of RU/s 
+	5. See the price for these RU/s
 Result:
+	In appendix.
 Conclusions:
 State:
 	Success
